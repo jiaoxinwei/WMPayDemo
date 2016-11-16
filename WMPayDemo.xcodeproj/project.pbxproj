@@ -76,15 +76,15 @@
 				0C3094651DDB353B00875370 /* libsqlite3.0.tbd in Frameworks */,
 				0C3094631DDB353600875370 /* libc++.tbd in Frameworks */,
 				0C3094611DDB352D00875370 /* libz.tbd in Frameworks */,
-				0C30945F1DDB352700875370 /* Foundation.framework in Frameworks */,
-				0C30945D1DDB352300875370 /* UIKit.framework in Frameworks */,
 				0C1228311DDC606B00F70C8A /* AlipaySDK.framework in Frameworks */,
-				0C30945B1DDB351E00875370 /* QuartzCore.framework in Frameworks */,
-				0C3094591DDB351900875370 /* CoreTelephony.framework in Frameworks */,
-				0C3094571DDB351400875370 /* CoreText.framework in Frameworks */,
-				0C3094551DDB351000875370 /* SystemConfiguration.framework in Frameworks */,
-				0C3094531DDB350B00875370 /* CFNetwork.framework in Frameworks */,
 				D2F898701DDCB71B00CECD62 /* libWMPay.a in Frameworks */,
+				0C3094551DDB351000875370 /* SystemConfiguration.framework in Frameworks */,
+				0C3094591DDB351900875370 /* CoreTelephony.framework in Frameworks */,
+				0C30945B1DDB351E00875370 /* QuartzCore.framework in Frameworks */,
+				0C3094571DDB351400875370 /* CoreText.framework in Frameworks */,
+				0C30945D1DDB352300875370 /* UIKit.framework in Frameworks */,
+				0C30945F1DDB352700875370 /* Foundation.framework in Frameworks */,
+				0C3094531DDB350B00875370 /* CFNetwork.framework in Frameworks */,
 				0C3094511DDB350100875370 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,9 +97,9 @@
 			children = (
 				0C1228231DDC606B00F70C8A /* Alipay */,
 				0C1228271DDC606B00F70C8A /* Wechat */,
-				0C12282D1DDC606B00F70C8A /* WMCheckstandController.h */,
 				D2F8986F1DDCB71B00CECD62 /* libWMPay.a */,
 				0C12282E1DDC606B00F70C8A /* WMPay.bundle */,
+				0C12282D1DDC606B00F70C8A /* WMCheckstandController.h */,
 				0C12282F1DDC606B00F70C8A /* WMPay.h */,
 			);
 			path = WMPay;

@@ -5,7 +5,7 @@
 一个web收银台，集成了支付宝 or 微信支付。在手机端可以调起微信/支付宝应用进行支付操作。
 
 ## 版本要求
-iOS SDK 要求 iOS 7.0 及以上版本
+iOS SDK 要求 iOS 8.0 及以上版本
 
 ## 接入方法
 
@@ -14,7 +14,11 @@ iOS SDK 要求 iOS 7.0 及以上版本
 #### 手动导入
 1. 获取 WMPaySDK
    
-   下载 SDK 例子工程，把 `WMPaySDK` 文件夹拖进自己的项目中。
+   下载 SDK 例子工程，把 `WMPay` 文件夹拖进自己的项目中。
+   
+   `WMPay` 结构图如下
+   
+    ![WMPay结构图](http://ww2.sinaimg.cn/large/006y8mN6gw1f9ueibeog6j30ea080gm7.jpg)
    
 2. 导入依赖的 Frameworks：
    
@@ -35,8 +39,15 @@ iOS SDK 要求 iOS 7.0 及以上版本
    Security.framework
    libsqlite3.0.tbd
    ```
-3. 添加 URL Schemes：在 Xcode 中，选择你的工程设置项，选中 "TARGETS" 一栏，在 "Info" 标签栏的 "URL Types" 添加 "URL Schemes"，如果使用微信，填入所注册的微信应用程序 id，如果不使用微信，则自定义，允许英文字母和数字，首字母必须是英文字母，建议起名稍复杂一些，尽量避免与其他程序冲突。
+3. 添加 URL Schemes：在 Xcode 中，选择你的工程设置项，选中 "TARGETS" 一栏，在 "Info" 标签栏的 "URL Types" 添加 "URL Schemes"，如果使用微信，填入所注册的微信应用程序 id，如果不使用微信，则自定义，允许英文字母和数字，首字母必须是英文字母，建议起名稍复杂一些，尽量避免与其他程序冲突；还需要增加另外一个Schemes用于标识本应用的，跟
+       
+  ```
+  [WMPay initPaySDKWithWechat:@"wx5501550d486be49b" withDescription:@"wemay" withAppScheme:@"wmpaydemo"];
+  ```
+ 
+ 中的APPScheme填入的值保持一致。
 
+4. 项目 Target-Build Settings 搜索 `other linker flags` 并修改其值为 `-ObjC`
 
 #### cocoaPods
 暂未支持
