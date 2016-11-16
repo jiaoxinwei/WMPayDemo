@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0C1228301DDC606B00F70C8A /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C1228241DDC606B00F70C8A /* AlipaySDK.bundle */; };
 		0C1228311DDC606B00F70C8A /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1228251DDC606B00F70C8A /* AlipaySDK.framework */; };
-		0C1228321DDC606B00F70C8A /* libWMPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1228261DDC606B00F70C8A /* libWMPay.a */; };
 		0C1228331DDC606B00F70C8A /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1228281DDC606B00F70C8A /* libWeChatSDK.a */; };
 		0C1228341DDC606B00F70C8A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0C1228291DDC606B00F70C8A /* README.txt */; };
 		0C1228351DDC606B00F70C8A /* WMPay.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0C12282E1DDC606B00F70C8A /* WMPay.bundle */; };
@@ -30,12 +29,12 @@
 		0C3094611DDB352D00875370 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3094601DDB352D00875370 /* libz.tbd */; };
 		0C3094631DDB353600875370 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3094621DDB353600875370 /* libc++.tbd */; };
 		0C3094651DDB353B00875370 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3094641DDB353B00875370 /* libsqlite3.0.tbd */; };
+		D2F898701DDCB71B00CECD62 /* libWMPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F8986F1DDCB71B00CECD62 /* libWMPay.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C1228241DDC606B00F70C8A /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		0C1228251DDC606B00F70C8A /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
-		0C1228261DDC606B00F70C8A /* libWMPay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWMPay.a; sourceTree = "<group>"; };
 		0C1228281DDC606B00F70C8A /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		0C1228291DDC606B00F70C8A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		0C12282A1DDC606B00F70C8A /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		0C3094601DDB352D00875370 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0C3094621DDB353600875370 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		0C3094641DDB353B00875370 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		D2F8986F1DDCB71B00CECD62 /* libWMPay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWMPay.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +84,8 @@
 				0C3094571DDB351400875370 /* CoreText.framework in Frameworks */,
 				0C3094551DDB351000875370 /* SystemConfiguration.framework in Frameworks */,
 				0C3094531DDB350B00875370 /* CFNetwork.framework in Frameworks */,
+				D2F898701DDCB71B00CECD62 /* libWMPay.a in Frameworks */,
 				0C3094511DDB350100875370 /* CoreMotion.framework in Frameworks */,
-				0C1228321DDC606B00F70C8A /* libWMPay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,9 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				0C1228231DDC606B00F70C8A /* Alipay */,
-				0C1228261DDC606B00F70C8A /* libWMPay.a */,
 				0C1228271DDC606B00F70C8A /* Wechat */,
 				0C12282D1DDC606B00F70C8A /* WMCheckstandController.h */,
+				D2F8986F1DDCB71B00CECD62 /* libWMPay.a */,
 				0C12282E1DDC606B00F70C8A /* WMPay.bundle */,
 				0C12282F1DDC606B00F70C8A /* WMPay.h */,
 			);
