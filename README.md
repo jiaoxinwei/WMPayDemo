@@ -124,5 +124,13 @@ WMPayListController * paylistVC = [[WMPayListController alloc] init];
  [self.navigationController pushViewController:paylistVC animated:YES];
  ```
  其中 orderString 为加密过的订单数据
+ 
+## Demo 操作流程
+
+1. 点击页面的订单提交
+2. 复制订单提交的信息到剪切板[长按出菜单之后select All 然后 copy]
+3. 点击右上角的去支付按钮，进入支付页面
+4. 选择支付宝/微信进行支付
+
 ## More
 获取更多帮助，请联系微脉
