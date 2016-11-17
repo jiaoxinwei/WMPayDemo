@@ -50,8 +50,11 @@ iOS SDK 要求 iOS 8.0 及以上版本
  其中 AppScheme 即应用的标识Scheme
 
 4. 添加 Other Linker Flags：在 Build Settings 搜索 Other Linker Flags ，添加 `-ObjC`。
+
 5. 支持 Debug 模式：打印出 log，方便调试。开启方法：`[WMPay setDebugMode:YES];`
+
 #### cocoaPods
+
 暂未支持
 
 ### 额外配置
