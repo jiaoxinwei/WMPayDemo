@@ -47,13 +47,9 @@
     if (currentAppBoard.string==nil) {
         return;
     }
-    UIBarButtonItem * item = (UIBarButtonItem*)sender;
-    if ([item isEqual:self.navigationItem.leftBarButtonItem]) {
-        WMCheckstandController * checkstandVC = [[WMCheckstandController alloc] init];
-        checkstandVC.orderString = currentAppBoard.string;
-        [self.navigationController pushViewController:checkstandVC animated:YES];
-    }else if ([item isEqual:self.navigationItem.rightBarButtonItem]){
-    }
+    WMCheckstandController * checkstandVC = [[WMCheckstandController alloc] init];
+    checkstandVC.orderString = currentAppBoard.string;
+    [self.navigationController pushViewController:checkstandVC animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

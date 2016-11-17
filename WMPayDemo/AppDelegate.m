@@ -18,7 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [WMPay initPaySDKWithWechat:@"wx5501550d486be49b" withDescription:@"wemay" withAppScheme:@"wemaydemo"];
+    [WMPay initPaySDKWithWechat:@"wx5501550d486be49b" withDescription:@"wmpay" withAppScheme:@"wmpaydemo"];
     [WMPay setDebugMode:YES];
     // Override point for customization after application launch.
     return YES;

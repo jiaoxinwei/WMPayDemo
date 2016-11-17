@@ -39,16 +39,18 @@ iOS SDK 要求 iOS 8.0 及以上版本
    Security.framework
    libsqlite3.0.tbd
    ```
-3. 添加 URL Schemes：在 Xcode 中，选择你的工程设置项，选中 "TARGETS" 一栏，在 "Info" 标签栏的 "URL Types" 添加 "URL Schemes"，如果使用微信，填入所注册的微信应用程序 id，如果不使用微信，则自定义，允许英文字母和数字，首字母必须是英文字母，建议起名稍复杂一些，尽量避免与其他程序冲突；还需要增加另外一个Schemes用于标识本应用的，跟
+3. 添加 URL Schemes：在 Xcode 中，选择你的工程设置项，选中 "TARGETS" 一栏，在 "Info" 标签栏的 "URL Types" 添加 "URL Schemes"
+  - 添加支持微信的Schemes：填入所注册的微信应用程序 id，
+  - 添加支持支付宝的Schemes：允许英文字母和数字，首字母必须是英文字母，建议起名稍复杂一些，尽量避免与其他程序冲突；该Schemes用于标识本应用的，用于支付宝回调的Schemes，如果不设置则支付成功之后无法掉起你的应用
        
   ```
-  [WMPay initPaySDKWithWechat:@"wx5501550d486be49b" withDescription:@"wemay" withAppScheme:@"wmpaydemo"];
+  [WMPay initPaySDKWithWechat:@"wx5501550d486be49b" withDescription:@"wmpay" withAppScheme:@"wmpaydemo"];
   ```
  
- 中的APPScheme填入的值保持一致。
+ 其中 AppScheme 即应用的标识Scheme
 
-4. 项目 Target-Build Settings 搜索 `other linker flags` 并修改其值为 `-ObjC`
-
+4. 添加 Other Linker Flags：在 Build Settings 搜索 Other Linker Flags ，添加 `-ObjC`。
+5. 支持 Debug 模式：打印出 log，方便调试。开启方法：`[WMPay setDebugMode:YES];`
 #### cocoaPods
 暂未支持
 
@@ -82,7 +84,8 @@ iOS SDK 要求 iOS 8.0 及以上版本
  - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     //向微信注册wxd930ea5d5a258f4f
-    [WMPay initPaySDKWithWechat:@"wx5501550d486be49b" withDescription:@"wemay" withAppScheme:@"wmpaydemo"];
+    [WMPay initPaySDKWithWechat:@"wx5501550d486be49b" withDescription:@"wmpay" withAppScheme:@"wmpaydemo"];
+    [WMPay setDebugMode:YES];
     
     return YES;
 }
@@ -118,4 +121,5 @@ WMPayListController * paylistVC = [[WMPayListController alloc] init];
  [self.navigationController pushViewController:paylistVC animated:YES];
  ```
  其中 orderString 为加密过的订单数据
-## 注意事项
+## More
+获取更多帮助，请联系微脉
