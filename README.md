@@ -43,7 +43,7 @@ iOS SDK 要求 iOS 8.0 及以上版本
   - 添加支持微信的Schemes：填入所注册的微信应用程序 id，
   - 添加支持支付宝的Schemes：允许英文字母和数字，首字母必须是英文字母，建议起名稍复杂一些，尽量避免与其他程序冲突；该Schemes用于标识本应用的，用于支付宝回调的Schemes，如果不设置则支付成功之后无法掉起你的应用
        
-  ```
+  ```objc
   [WMPay initPaySDKWithWechat:@"wx5501550d486be49b" withDescription:@"wmpay" withAppScheme:@"wmpaydemo"];
   ```
  
